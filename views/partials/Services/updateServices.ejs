@@ -1,0 +1,28 @@
+<form method="post">
+    <div class="row mb-3">
+        <!-- inputtype= hidden use kr ny ka maqsad ye k data hemary paas "id" ki base pr aa rha ha agr hum is 
+        ko hata dain ga tw hamray paas database sa data nhi aye ga  -->
+        <input type="hidden" name="id" value="<%= services.ServiceName%>">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputLastName" name="ServiceName" type="text"
+                    value="<%= services.ServiceName%>" placeholder="Enter your Service Name" />
+                <label for="inputLastName">Service Name</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputServiceDesc" name="ServiceDesc" type="text"
+                    value="<%= services.ServiceDesc%>" placeholder="Service Description" />
+                <label for="inputServiceDesc">Service Description</label>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 mb-0">
+        <div class="d-grid">
+            <button class="btn btn-primary btn-block" type="submit">
+                Update Services
+            </button>
+        </div>
+    </div>
+</form>

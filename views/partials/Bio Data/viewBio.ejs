@@ -1,0 +1,68 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Bio Data</h1>
+    <ol class="breadcrumb mb-4">
+        <!-- <li class="breadcrumb-item">
+        <a href="/home">Dashboard</a>
+      </li> -->
+        <li class="breadcrumb-item active">Dashboard/Bio Data/View Bio Data</li>
+    </ol>
+    <% if(biodata.length> 0){ %> <% biodata.forEach(bioData=>{ %>
+            <div class="card">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        <b>
+                            <%= bioData.FirstName %> Bio Data
+                        </b>
+                    </h5>
+                    <p>
+                        <!-- "." k baad jo SkillName ha wo schema ma ham na define kra tha us ka name ha -->
+                        <b>First Name:</b>
+                        <%= bioData.FirstName %>
+                    </p>
+                    <p>
+                        <b>Last Name:</b>
+                        <%= bioData.LastName %>
+                    </p>
+                    <p>
+                        <b>Date of Birth:</b>
+                        <%= bioData.DateofBirth %>
+                    </p>
+                    <p>
+                        <b>E-mail:</b>
+                        <%= bioData.Email %>
+                    </p>
+                    <p>
+                        <b>Education:</b>
+                        <%= bioData.Education %>
+                    </p>
+                    <p>
+                        <b>Profession:</b>
+                        <%= bioData.Profession %>
+                    </p>
+                    <p>
+                        <b>Phone No:</b>
+                        <%= bioData.PhoneNo %>
+                    </p>
+                    <p>
+                        <b>Address:</b>
+                        <%= bioData.Address %>
+                    </p>
+                    <p>
+                        <b>Experience:</b>
+                        <%= bioData.Experience %>
+                    </p>
+                    <p>
+                        <a href="/viewBio/delete/<%= bioData._id %>" class="btn btn-danger btn-block">Delete</a>
+                    </p>
+
+                    <p>
+                        <a href="/viewBio/edit/<%= bioData._id %>" class="btn btn-info btn-block">Edit</a>
+                    </p>
+                </div>
+
+            </div>
+            <%})}%>
+                <br><br>
+</div>

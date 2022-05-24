@@ -1,0 +1,42 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Certification</h1>
+    <ol class="breadcrumb mb-4">
+        <!-- <li class="breadcrumb-item">
+        <a href="/home">Dashboard</a>
+      </li> -->
+        <li class="breadcrumb-item active">Dashboard/Certification/View Certification</li>
+    </ol>
+    <table id="datatablesSimple">
+        <thead>
+            <tr>
+                <th>Certification Name</th>
+                <th>Institute</th>
+                <th>Date of Issue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- jo ham na final variable bnaya tha jis ma saara data store ho rha ha us variable ka naam aye ga .length
+            sa pehly  -->
+                <% if(certificate.length> 0){ %> <% certificate.forEach(Certif=>{ %>
+                        <td>
+                            <!-- "." k baad jo SkillName ha wo schema ma ham na define kra tha us ka name ha -->
+                            <%= Certif.CertName %>
+                        </td>
+                        <td>
+                            <%= Certif.Issuer %>
+                        </td>
+                        <td>
+                            <%= Certif.DateofIssue %>
+                        </td>
+                        <td>
+                            <a href="/viewCert/delete/<%= Certif._id %>" class="btn btn-danger btn-block">Delete</a>
+                            <a href="/viewCert/edit/<%= Certif._id %>" class="btn btn-primary btn-block">Edit</a>
+                        </td>
+
+            </tr>
+            <% }) %>
+                <% } %>
+        </tbody>
+    </table>
+</div>

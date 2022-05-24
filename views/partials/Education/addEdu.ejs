@@ -1,0 +1,68 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Education</h1>
+    <ol class="breadcrumb mb-4">
+        <!-- <li class="breadcrumb-item">
+        <a href="/home">Dashboard</a>
+      </li> -->
+        <li class="breadcrumb-item active">Dashboard/Add Education</li>
+    </ol>
+
+    <form method="post">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="form-floating mb-3 mb-md-0">
+                    <input class="form-control" id="inputInsName" type="text" name="InsName"
+                        placeholder="Enter your Institute Name" />
+                    <label for="inputInsName">Institute Name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input class="form-control" id="inputDeg" name="Deg" type="text" placeholder="Enter Degree" />
+                    <label for="inputDeg">Degree Name</label>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input class="form-control" id="inputStartDate" name="StartDate" type="date"
+                        placeholder="dd/mm/yy" />
+                    <label for="inputStartDate">Start Date</label>
+                </div>
+            </div>
+            <br><br><br>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input class="form-control" id="inputEndDate" name="EndDate" type="date" placeholder="dd/mm/yy" />
+                    <label for="inputEndDate">End Date</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input class="form-control" id="inputField" name="Field" type="text" placeholder="Field of Study" />
+                    <label for="inputField">Field</label>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input class="form-control" id="inputGrade" name="Grade" type="text" placeholder="Enter Grade" />
+                    <label for="inputGrade">Grade</label>
+                </div>
+            </div>
+
+        </div>
+        <div class="mt-4 mb-0">
+            <div class="d-grid">
+                <button class="btn btn-primary btn-block" href="/addservices" type="submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>

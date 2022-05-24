@@ -1,0 +1,28 @@
+<form method="post">
+    <div class="row mb-3">
+        <!-- inputtype= hidden use kr ny ka maqsad ye k data hemary paas "id" ki base pr aa rha ha agr hum is 
+        ko hata dain ga tw hamray paas database sa data nhi aye ga  -->
+        <input type="hidden" name="id" value="<%= skill._id%>">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputSkillName" name="SkillName" type="text"
+                    value="<%= skill.SkillName%>" placeholder="Skill Name" />
+                <label for="inputSkillName">Skill Name</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputSkillValue" name="SkillValue" type="text"
+                    value="<%= skill.SkillValue%>" placeholder="Skill Value" />
+                <label for="inputSkillValue">Skill Value</label>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 mb-0">
+        <div class="d-grid">
+            <button class="btn btn-primary btn-block" type="submit">
+                Update Skill
+            </button>
+        </div>
+    </div>
+</form>

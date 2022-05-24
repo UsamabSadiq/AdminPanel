@@ -1,0 +1,86 @@
+<form method="post">
+    <div class="row mb-6">
+        <!-- inputtype= hidden use kr ny ka maqsad ye k data hemary paas "id" ki base pr aa rha ha agr hum is 
+        ko hata dain ga tw hamray paas database sa data nhi aye ga  -->
+        <input type="hidden" name="id" value="<%= biodata._id%>">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputLastName" name="FirstName" type="text"
+                    value="<%= biodata.FirstName%>" placeholder="Enter your First Name" />
+                <label for="inputLastName">First Name</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputLastName" name="LastName" type="text"
+                    value="<%= biodata.LastName%>" placeholder="Enter your Last name" />
+                <label for="inputLastName">LastName</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputEmail" name="Email" type="text" value="<%= biodata.Email%>"
+                    placeholder="Enter your E-mail" />
+                <label for="inputEmail">E-mail</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputDateofBirth" name="DateofBirth" type="text"
+                    value="<%= biodata.DateofBirth%>" placeholder="Enter your Date of Birth" />
+                <label for="inputDateofBirth">Date of Birth</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputEducation" name="Education" type="text"
+                    value="<%= biodata.Education%>" placeholder="Enter your Education" />
+                <label for="inputEducation">Education</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputProfession" name="Profession" type="text"
+                    value="<%= biodata.Profession%>" placeholder="Enter your Profession" />
+                <label for="inputProfession">Profession</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputPhoneNo" name="PhoneNo" type="number" value="<%= biodata.PhoneNo%>"
+                    placeholder="Phone No" />
+                <label for="inputPhoneNo">Phone No</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputProfession" name="Address" type="text"
+                    value="<%= biodata.Address%>" placeholder="Enter your Address" />
+                <label for="inputAddress">Address</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputExperience" name="Experience" type="text"
+                    value="<%= biodata.Experience%>" placeholder="Enter your Experience" />
+                <label for="inputExperience">Experience</label>
+            </div>
+        </div>
+
+    </div>
+    <div class="mt-4 mb-0">
+        <div class="d-grid">
+            <button class="btn btn-primary btn-block" type="submit">
+                Update Bio Data
+            </button>
+        </div>
+    </div>
+</form>

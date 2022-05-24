@@ -1,0 +1,47 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Certification</h1>
+    <ol class="breadcrumb mb-4">
+        <!-- <li class="breadcrumb-item">
+        <a href="/home">Dashboard</a>
+      </li> -->
+        <li class="breadcrumb-item active">Dashboard/Add Certification</li>
+    </ol>
+
+    <form method="post">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <div class="form-floating mb-3 mb-md-0">
+                    <input class="form-control" id="inputFirstName" type="text" name="CertName"
+                        placeholder="Enter your Certification Name" />
+                    <label for="inputFirstName">Certification Name</label>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input class="form-control" id="inputLastName" name="Issuer" type="text"
+                        placeholder="Enter Source of Certification" />
+                    <label for="inputLastName">Certification Source</label>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="col-md-6">
+                <div class="form-floating">
+                    <input class="form-control" id="inputDOB" name="DateofIssue" type="date" placeholder="dd/mm/yy" />
+                    <label for="inputDOI">Issue Date</label>
+                </div>
+            </div>
+            <br><br><br>
+
+        </div>
+        <div class="mt-4 mb-0">
+            <div class="d-grid">
+                <button class="btn btn-primary btn-block" href="/addservices" type="submit">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>

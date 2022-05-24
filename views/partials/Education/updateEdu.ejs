@@ -1,0 +1,56 @@
+<form method="post">
+    <div class="row mb-3">
+        <!-- inputtype= hidden use kr ny ka maqsad ye k data hemary paas "id" ki base pr aa rha ha agr hum is 
+        ko hata dain ga tw hamray paas database sa data nhi aye ga  -->
+        <input type="hidden" name="id" value="<%= education._id%>">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputLastName" name="InsName" type="text"
+                    value="<%= education.InsName%>" placeholder="Enter your last name" />
+                <label for="inputLastName">Institute Name</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputDeg" name="Deg" type="text" value="<%= education.Deg%>"
+                    placeholder="Enter your Degree" />
+                <label for="inputDeg">Degree</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputStartDate" name="StartDate" type="text"
+                    value="<%= education.StartDate%>" placeholder="Start Date" />
+                <label for="inputStartDate">Start Date</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputEndDate" name="EndDate" type="text" value="<%= education.EndDate%>"
+                    placeholder="End Date" />
+                <label for="inputEndDate">EndDate</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputField" name="Field" type="text" value="<%= education.Field%>"
+                    placeholder="Field" />
+                <label for="inputField">Field</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputGrade" name="Grade" type="text" value="<%= education.Grade%>"
+                    placeholder="Grade" />
+                <label for="inputGrade">Grade</label>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 mb-0">
+        <div class="d-grid">
+            <button class="btn btn-primary btn-block" type="submit">
+                Update Education
+            </button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,51 @@
+<form method="post">
+    <div class="row mb-3">
+        <!-- inputtype= hidden use kr ny ka maqsad ye k data hemary paas "id" ki base pr aa rha ha agr hum is 
+        ko hata dain ga tw hamray paas database sa data nhi aye ga  -->
+        <input type="hidden" name="id" value="<%= exper._id%>">
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputOccuName" name="OccuName" type="text" value="<%= exper.OccuName%>"
+                    placeholder="Enter your Occupation Name" />
+                <label for="inputOccuName">Occupation Name</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputCompName" name="CompName" type="text" value="<%= exper.CompName%>"
+                    placeholder="Certification Source" />
+                <label for="inputCompName">Enter Company Name</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputStartYear" name="StartYear" type="date"
+                    value="<%= exper.StartYear%>" placeholder="dd/mm/yy" />
+                <label for="inputStartYear">Start Year</label>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputEndYear" name="EndYear" type="date" value="<%= exper.EndYear%>"
+                    placeholder="dd/mm/yy" />
+                <label for="inputEndYear">End Year</label>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="col-md-6">
+            <div class="form-floating">
+                <input class="form-control" id="inputDesc" name="Desc" type="text" value="<%= exper.Desc%>"
+                    placeholder="Description" />
+                <label for="inputDesc">Description</label>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 mb-0">
+        <div class="d-grid">
+            <button class="btn btn-primary btn-block" type="submit">
+                Update Certification
+            </button>
+        </div>
+    </div>
+</form>

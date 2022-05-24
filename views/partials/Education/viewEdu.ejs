@@ -1,0 +1,53 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Education</h1>
+    <ol class="breadcrumb mb-4">
+        <!-- <li class="breadcrumb-item">
+        <a href="/home">Dashboard</a>
+      </li> -->
+        <li class="breadcrumb-item active">Dashboard/Education/View Education</li>
+    </ol>
+    <table id="datatablesSimple">
+        <thead>
+            <tr>
+                <th>Institute Name</th>
+                <th>Degree</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Field</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- jo ham na final variable bnaya tha jis ma saara data store ho rha ha us variable ka naam aye ga .length
+            sa pehly  -->
+                <% if(education.length> 0){ %> <% education.forEach(Edu=>{ %>
+                        <td>
+                            <!-- "." k baad jo SkillName ha wo schema ma ham na define kra tha us ka name ha -->
+                            <%= Edu.InsName %>
+                        </td>
+                        <td>
+                            <%= Edu.Deg %>
+                        </td>
+                        <td>
+                            <%= Edu.StartDate %>
+                        </td>
+                        <td>
+                            <%= Edu.EndDate %>
+                        </td>
+                        <td>
+                            <%= Edu.Field %>
+                        </td>
+                        <td>
+                            <%= Edu.Grade %>
+                        </td>
+                        <td>
+                            <a href="/viewEdu/delete/<%= Edu._id %>" class="btn btn-danger btn-block">Delete</a>
+                            <a href="/viewEdu/edit/<%= Edu._id %>" class="btn btn-primary btn-block">Edit</a>
+                        </td>
+            </tr>
+            <% }) %>
+                <% } %>
+        </tbody>
+    </table>
+</div>

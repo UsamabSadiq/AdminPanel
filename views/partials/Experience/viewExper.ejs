@@ -1,0 +1,50 @@
+<div class="container-fluid px-4">
+    <h1 class="mt-4">Experience</h1>
+    <ol class="breadcrumb mb-4">
+        <!-- <li class="breadcrumb-item">
+        <a href="/home">Dashboard</a>
+      </li> -->
+        <li class="breadcrumb-item active">Dashboard/Experience/View Experience</li>
+    </ol>
+    <table id="datatablesSimple">
+        <thead>
+            <tr>
+                <th>Occupation</th>
+                <th>Company Name</th>
+                <th>Start Year</th>
+                <th>End Year</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- jo ham na final variable bnaya tha jis ma saara data store ho rha ha us variable ka naam aye ga .length
+            sa pehly  -->
+                <% if(exper.length> 0){ %> <% exper.forEach(Exper=>{ %>
+                        <td>
+                            <!-- "." k baad jo SkillName ha wo schema ma ham na define kra tha us ka name ha -->
+                            <%= Exper.OccuName %>
+                        </td>
+                        <td>
+                            <%= Exper.CompName %>
+                        </td>
+                        <td>
+                            <%= Exper.StartYear %>
+                        </td>
+                        <td>
+                            <%= Exper.EndYear %>
+                        </td>
+                        <td>
+                            <%= Exper.Desc %>
+                        </td>
+                        <td>
+                            <a href="/viewExper/delete/<%= Exper._id %>" class="btn btn-danger btn-block">Delete</a>
+                            <a href="/viewExper/edit/<%= Exper._id %>" class="btn btn-primary btn-block">Edit</a>
+
+                        </td>
+            </tr>
+            <% }) %>
+                <% } %>
+        </tbody>
+    </table>
+</div>
